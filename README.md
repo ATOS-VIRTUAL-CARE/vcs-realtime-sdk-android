@@ -26,9 +26,9 @@ allprojects {
 }
 ```
 
-Add dependency to your app module (such as app/build.gradle), latest available version in this repo is **0.2.0**:
+Add dependency to your app module (such as app/build.gradle), latest available version in this repo is **0.2.1**:
 ```xml
 dependencies {
-    implementation 'atos.virtual.care:vcs-reatime-sdk:0.2.0'
+    implementation 'atos.virtual.care:vcs-reatime-sdk:0.2.1'
 }
 ```
