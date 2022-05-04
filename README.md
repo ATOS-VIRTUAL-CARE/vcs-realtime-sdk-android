@@ -13,22 +13,25 @@ Where to find more information about the VCS Realtime SDKs and APIs.
 
 
 ## Integrate Into Android Project
-Add repository in the root gradle file:
+Add the Android SDK and WebRTC image repositories to the root gradle file:
 ```xml
 ...
 allprojects {
     repositories {
         ...
-        maven {
-            url 'https://raw.github.com/ATOS-VIRTUAL-CARE/vcs-realtime-sdk-android/repo/'
-        }
+        maven { url 'https://raw.github.com/ATOS-VIRTUAL-CARE/vcs-realtime-sdk-android/repo/' }
+        maven { url 'https://raw.github.com/ATOS-VIRTUAL-CARE/webrtc-android/repo/' }
     }
 }
 ```
 
-Add the SDK dependency to your app module (such as app/build.gradle) and update the version to the latest release.
+Add the following dependencies to your app module (such as app/build.gradle) and update the version to the latest releases. The apollo runtime will also need to be added as a dependency; the current version the SDK is using is 3.0.0.
 ```xml
 dependencies {
+    ...
     implementation 'atos.virtual.care:vcs-reatime-sdk:x.x.x'
+    implementation 'atos.virtual.care:libwebrtc:M98'
+    implementation 'com.apollographql.apollo3:apollo-runtime:3.0.0'
 }
 ```
+
