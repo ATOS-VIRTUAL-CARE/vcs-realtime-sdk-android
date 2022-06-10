@@ -25,13 +25,13 @@ allprojects {
 }
 ```
 
-Add the following dependencies to your app module (such as app/build.gradle) and update the version to the latest releases. The apollo runtime will also need to be added as a dependency; the current version the SDK is using is 3.0.0.
+Add the following dependencies to your app module (such as app/build.gradle) and update the version to the latest releases. The apollo runtime will also need to be added as a dependency; the current version the SDK is using is 3.2.2.
 ```xml
 dependencies {
     ...
     implementation 'atos.virtual.care:vcs-reatime-sdk:x.x.x'
-    implementation 'atos.virtual.care:libwebrtc:M98'
-    implementation 'com.apollographql.apollo3:apollo-runtime:3.0.0'
+    implementation 'atos.virtual.care:libwebrtc:M102'
+    implementation 'com.apollographql.apollo3:apollo-runtime:3.2.2'
 }
 ```
 
